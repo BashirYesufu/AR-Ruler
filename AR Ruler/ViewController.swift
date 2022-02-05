@@ -15,6 +15,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     var dotNodes = [SCNNode]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +42,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
  
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        if dotNodes.count >= 2 {
+            for dotNode in dotNodes {
+                dotNode.removeFromParentNode()
+            }
+            dotNodes = [SCNNode]()
+        }
         
         if let touchLocation = touches.first?.location(in: sceneView) {
             let hitTestResults = sceneView.hitTest(touchLocation, types: .featurePoint)
