@@ -6,7 +6,7 @@ Keeping up with the latest trends of the industry, I'll be working on Augmented 
 
 ## What will be created
 
-Ruler is a simple app that will place red dots on the screen where a flat surface is detected, measure the distance between the dots and display the distance in meters. 
+Ruler is a simple app that will place red dots on the screen where a flat surface is detected, measures the distance between the dots and display the distance in meters. 
 
 ## What I will work on
 
